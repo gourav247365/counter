@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JavaScript App</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            background-image: url(bg.jpg);
+            background-size: cover;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        button {
+                background-color: #042978;
+                border: none;
+                color: white;
+                padding: 20px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 10px;
+                font-weight: 500;
+            }
+            
+        button:hover{
+            background-color: rgb(218, 125, 219);
+        }
+
+        button:active{
+            background-color: rgb(206, 7, 210);
+        }
+
+        header {
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Counter App
+        </h1>
+    </header><br>
+    <div>
+        <button id="inc-btn" onclick="increment()">INCREMENT</button>
+        <button id="sav-btn" onclick="save()">SAVE</button>
+        <button id="res-btn" onclick="reset()">RESET</button>
+    </div>
+    <h1 id="count">0</h1>
+    <h2 id="entries">previous entries: </h2>
+    <script src="counter.js"></script>
+</body>
+
+</html>
